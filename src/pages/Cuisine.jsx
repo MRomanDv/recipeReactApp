@@ -28,8 +28,10 @@ function Cuisine(){
             {cuisine.map((item)=>{
                 return <div key={item.id}>
                     <div className={classes.card}>
+                        <Link to={`/recipes/${item.id}`}>
                         <div className={classes.imgcontainer}><img src={item.image} /></div>
                         <div className={classes.title}>{item.title}</div>
+                        </Link>
                     </div>
                 </div>
             })}

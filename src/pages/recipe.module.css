@@ -1,0 +1,47 @@
+.recipecontainer {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.imgcontainer img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.button {
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: rgb(34, 32, 32);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 1rem;
+    color: rgb(230, 200, 200);
+}
+
+.active {
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background: rgb(219, 73, 73);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.box2 {
+    width: 600px;
+}
+.textinfo {
+    padding: 2rem 0;
+    color:rgb(230, 200, 200) ;
+}
+

@@ -1,0 +1,19 @@
+.a {
+    width: 200px;
+}
+.iconcontainer {
+    max-width: 200px;
+    padding: 1.2rem 0 0 1.2rem;
+    display: flex;
+    color: rgb(167, 69, 69);
+    align-items: center;
+    transition: 500ms ease;
+}
+.home {
+   margin-left: 10px;
+   transition: 500ms ease;
+}
+.home:hover{
+    letter-spacing: 8px;
+    color: rgb(219, 148, 148);
+}

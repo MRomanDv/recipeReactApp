@@ -32,7 +32,7 @@
 
 a {
     text-decoration:none;
-    color:rgb(218, 199, 199);
+    color:rgb(218, 199, 199); 
     transition: 1s ease;
     font-size: .8rem;
 }

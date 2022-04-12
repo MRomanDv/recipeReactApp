@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
 import classes from './Cuisine.module.css'
+import { Link } from 'react-router-dom'
 
 function Searched(){
     const [searchedRecipies, setSearchedRecipies] = useState([])
@@ -21,8 +22,10 @@ function Searched(){
             {searchedRecipies.map((item)=>{
                 return <div key={item.id}>
                 <div className={classes.card}>
-                    <div className={classes.imgcontainer}><img src={item.image} /></div>
-                    <div className={classes.title}>{item.title}</div>
+                    <Link to={`/recipes/${item.id}`}>
+                       <div className={classes.imgcontainer}><img src={item.image} /></div>
+                       <div className={classes.title}>{item.title}</div>
+                    </Link>
                 </div>
             </div>
             })}
