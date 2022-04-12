@@ -45,3 +45,38 @@
     color:rgb(230, 200, 200) ;
 }
 
+@media screen and (max-width:1000px) {
+    .recipecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box2 {
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width:650px) {
+    .box2 {
+        width: 300px ;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .imgcontainer img {
+        width: 200px;
+    }
+    .box1 {
+        text-align: center;
+    }
+    .button,
+    .active {
+        font-size: .8rem;
+    }
+    .textinfo {
+        font-size: .8rem;
+    }
+    .box2 {
+        width: 250px;
+    }
+}

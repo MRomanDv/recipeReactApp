@@ -10,25 +10,25 @@ function Category() {
            <NavLink  to={"/cuisine/italian"} className={({isActive})=> isActive ? classes.active : classes.iconescontainer}>
             <div>
                 <FaPizzaSlice className={classes.icon} />
-                <h3>italian</h3>
+                <h3 className={classes.icontitle}>italian</h3>
             </div> 
             </NavLink>
             <NavLink to={"/cuisine/American"} className={({isActive})=> isActive ? classes.active : classes.iconescontainer}>
             <div>
                 <FaHamburger className={classes.icon} />
-                <h3>American</h3>
+                <h3 className={classes.icontitle}>American</h3>
             </div>
             </NavLink>
             <NavLink to={"/cuisine/Thai"} className={({isActive})=> isActive ? classes.active : classes.iconescontainer}>
                 <div>
                 <GiNoodles className={classes.icon} />
-                <h3>Thai</h3>
+                <h3 className={classes.icontitle}>Thai</h3>
             </div>
             </NavLink>
             <NavLink to={"/cuisine/japanese"} className={({isActive})=> isActive ? classes.active : classes.iconescontainer}>
             <div>
                 <GiChopsticks className={classes.icon} />
-                <h3>japanese</h3>
+                <h3 className={classes.icontitle}>japanese</h3>
             </div> 
             </NavLink>
         </div> 

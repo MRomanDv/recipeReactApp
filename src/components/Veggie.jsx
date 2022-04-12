@@ -28,12 +28,13 @@ function Veggie(){
         }
     }
     return(
-        <section className={classes.popularsection}>
+        <section>
+            <div className={classes.veggietext}>
             <h2>Veggie options</h2>
-            <Splide options={{perPage:3, drag:'free'}}>
+            </div>
+        <section className={classes.veggiesection}>
              {veggie.map((recipe) => {
                     return (
-                    <SplideSlide key={recipe.id}>
                     <div className={classes.cardscontainer}>
                     <div className={classes.veggiecard}> 
                     <Link to={`/recipes/${recipe.id}`}>                      
@@ -42,10 +43,9 @@ function Veggie(){
                     </Link>
                     </div>
                     </div>
-                    </SplideSlide>
                     )
             })}
-            </Splide>
+        </section>
         </section>
     )
 }

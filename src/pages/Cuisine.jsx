@@ -24,7 +24,7 @@ function Cuisine(){
 
    //JSX
     return (
-        <section className={classes.grid}>
+        <section className={classes.grid}> 
             {cuisine.map((item)=>{
                 return <div key={item.id}>
                     <div className={classes.card}>

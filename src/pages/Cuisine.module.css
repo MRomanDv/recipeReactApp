@@ -28,3 +28,9 @@
 .title {
     color: rgb(228, 181, 181);
 }
+
+@media screen and (max-width:300px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); 
+    }
+}

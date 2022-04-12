@@ -59,3 +59,18 @@ a:hover * .icon {
         transform: rotate(0);
     }
 }
+
+@media screen and (max-width:1000px) {
+    .linkscontainer {
+        width: 100vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .linkscontainer {
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(2 , 50px);
+        gap: 1rem;
+        align-items: center;
+    }
+}

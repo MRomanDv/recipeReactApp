@@ -29,3 +29,15 @@ input::placeholder {
     z-index: 1;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width:450px) {
+    form input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    form input {
+        width: 260px;
+    }
+}

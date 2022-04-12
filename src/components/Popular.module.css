@@ -7,45 +7,70 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+
 .popularsection {
     width: 90vw;
-    height: max-content;
+    min-height: 200px;
     margin: auto;
-    overflow-x: scroll;
+    overflow-x: auto;
+    display: flex;  
 }
-.popularsection h2 {
-    color:rgb(200, 211, 241);
-    text-align: center;
-    padding: 20px 0;
-    letter-spacing: 8px;
+.popularsection::-webkit-scrollbar {
+    width: 0;
 }
-
-.cardscontainer {
-   position: relative;
-   width: fit-content;
-   height: 400px;
-   padding: 20px;
-   overflow-x: scroll;
+.favorite {
+   width: 100vw;
+   text-align: center;
+   padding: 2rem 0;  
+}
+.favorite h2 {
+    color: rgb(236, 179, 179);
 }
 
-.card {
-    width: 300px;
-    overflow: hidden;
-}
+
 .imgcontainer {
+    width: 300px;
     overflow: hidden; 
+    margin-right: 3rem;
 }
+
+
+/*VEGGIE COMPONENT*/
+.veggiesection {
+    width: 90vw;
+    min-height: 200px;
+    margin: auto;
+    margin-bottom: 100px;
+    overflow-x: auto;
+    display: flex;
+}
+
+.veggiesection::-webkit-scrollbar {
+    width: 0;
+}
+
+.veggietext {
+    width: 100vw;
+    text-align: center;
+    padding: 2rem 0;  
+}
+
+.veggietext h2 {
+    color: rgb(236, 179, 179);
+}
+
 .imgveggiescontainer {
     overflow: hidden; 
+    margin-right: 3rem;
 }
-.card img {
+img {
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
     cursor: pointer;
     transition: 500ms ease;
 }
-.card img:hover {
+img:hover {
     transform: scale(1.2);
 }
 

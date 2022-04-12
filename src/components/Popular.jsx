@@ -34,24 +34,20 @@ function Popular(){
 
 
     return ( 
-        <section className={classes.popularsection}>
-            <h2>Popular picks</h2>
-            <Splide options={{perPage:4, drag:'free'}}>
+        <section>
+            <div className={classes.favorite} > 
+            <h2>Favorite picks</h2>
+            </div>
+        <section className={classes.popularsection} >
              {popular.map((recipe) => {
-                    return (
-                    <SplideSlide key={recipe.id}>
-                    <div className={classes.cardscontainer}>                  
-                    <div className={classes.card}> 
-                    <Link to={`/recipes/${recipe.id}`}>                      
+                    return (                                                                      
+                    <Link to={`/recipes/${recipe.id}`} key={recipe.id} >                      
                     <div className={classes.imgcontainer}><img src={recipe.image} alt="recipe" /></div>
                     <div className={classes.text}><p>{recipe.title}</p></div>  
-                    </Link>                
-                    </div>
-                    </div>                    
-                    </SplideSlide>
+                    </Link>                                   
                     )
             })}
-            </Splide>
+        </section>
         </section>
     )
 }
