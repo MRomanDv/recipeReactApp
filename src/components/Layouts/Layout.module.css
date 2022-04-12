@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    background: linear-gradient(90deg, rgba(86,131,182,1) 22%, rgba(252,64,77,1) 80%);
+    overflow: hidden;
+}

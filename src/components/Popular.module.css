@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.popularsection {
+    width: 90vw;
+    height: max-content;
+    margin: auto;
+    overflow-x: scroll;
+}
+.popularsection h2 {
+    color:rgb(200, 211, 241);
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 8px;
+}
+
+.cardscontainer {
+   position: relative;
+   width: fit-content;
+   height: 400px;
+   padding: 20px;
+   overflow-x: scroll;
+}
+
+.card {
+    width: 300px;
+    overflow: hidden;
+}
+.imgcontainer {
+    overflow: hidden; 
+}
+.imgveggiescontainer {
+    overflow: hidden; 
+}
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.text {
+    color: rgb(214, 185, 185);
+    margin-top: 1rem;
+}
+.text p {
+    font-size: 1.2rem;
+}
+
+.veggiecard {
+    width: 400px;
+    overflow: hidden;
+}
+.veggiecard img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: 500ms ease;
+    cursor:pointer;
+}
+
+.veggiecard img:hover {
+    transform: scale(1.2);
+}
+
