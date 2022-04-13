@@ -35,7 +35,7 @@ function Veggie(){
         <section className={classes.veggiesection}>
              {veggie.map((recipe) => {
                     return (
-                    <div className={classes.cardscontainer}>
+                    <div className={classes.cardscontainer} key={recipe.id}>
                     <div className={classes.veggiecard}> 
                     <Link to={`/recipes/${recipe.id}`}>                      
                     <div className={classes.imgveggiescontainer}><img src={recipe.image} alt="recipe" /></div>
