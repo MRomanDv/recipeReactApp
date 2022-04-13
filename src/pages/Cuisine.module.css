@@ -15,7 +15,8 @@
 .imgcontainer img {
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transition: 500ms ease;
     cursor: pointer;
 }

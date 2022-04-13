@@ -1,9 +1,6 @@
 import {Link} from 'react-router-dom'
 import {useEffect, useState} from 'react'
 import classes from './Popular.module.css' 
-import {Splide,SplideSlide} from '@splidejs/react-splide'
-import '@splidejs/react-splide/css'
-//@splidejs/splide/dist/css/splide.min.css
 
 
 function Popular(){

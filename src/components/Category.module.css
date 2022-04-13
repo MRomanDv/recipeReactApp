@@ -41,11 +41,24 @@ a:hover{
 }
 
 a:hover * .icon {
-    animation: rotate 1s ease;
+    -webkit-animation: rotate 1s ease;
+            animation: rotate 1s ease;
 }
 
 .icon  {
     color: rgb(245, 179, 179);
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
 
 @keyframes rotate {
